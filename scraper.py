@@ -40,6 +40,7 @@ def get_group_id_from_url(url):
 
 def get_photos(qs, qg, page=1, original=False, bbox=None):
     params = {
+        'sort': 'relevance',
         'content_type': '7',
         'per_page': '500',
         'media': 'photos',
